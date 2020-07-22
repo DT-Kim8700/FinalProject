@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8FF"
+    tools:context=".ActivityBraceletRegist">
+
+    <Button
+        android:id="@+id/regist_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="150dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="250dp"
+        android:background="@drawable/button1"
+        android:fontFamily="@font/nanum"
+        android:text="등록"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_gender" />
+
+    <EditText
+        android:id="@+id/ward_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#252525"
+        android:ems="10"
+        android:hint="피보호자의 이름을 입력해주세요"
+        android:inputType="textPersonName"
+        android:textColor="#252525"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#606060"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/ward_sn"
+        app:layout_constraintEnd_toEndOf="@+id/regist_num"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="@+id/regist_num"
+        app:layout_constraintTop_toBottomOf="@+id/regist_num" />
+
+    <EditText
+        android:id="@+id/regist_num"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#252525"
+        android:ems="10"
+        android:hint="팔찌 번호를 입력해주세요"
+        android:inputType="textPersonName"
+        android:textColor="#252525"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#606060"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/ward_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ward_sn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#252525"
+        android:ems="10"
+        android:hint="피보호자의  생년월일을 입력해주세요"
+        android:inputType="textPersonName"
+        android:textColor="#252525"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#606060"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/check_gender"
+        app:layout_constraintEnd_toEndOf="@+id/ward_name"
+        app:layout_constraintStart_toStartOf="@+id/ward_name"
+        app:layout_constraintTop_toBottomOf="@+id/ward_name" />
+
+
+    <RadioGroup
+        android:id="@+id/check_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/regist_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/ward_sn">
+
+        <RadioButton
+            android:id="@+id/check_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTintMode="add"
+            android:buttonTint="#000000"
+            android:text="남"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            android:textCursorDrawable="@drawable/checkcolor"
+            tools:layout_conversion_absoluteHeight="32dp"
+            tools:layout_conversion_absoluteWidth="45dp"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="344dp" />
+
+        <RadioButton
+            android:id="@+id/check_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000000"
+            android:text="여"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            android:textCursorDrawable="@drawable/checkcolor"
+            tools:layout_conversion_absoluteHeight="32dp"
+            tools:layout_conversion_absoluteWidth="45dp"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="376dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="성별 : "
+        android:textColor="#252525"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/check_gender"
+        app:layout_constraintEnd_toStartOf="@+id/check_gender"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/regist_num"
+        app:layout_constraintTop_toTopOf="@+id/check_gender" />
+</androidx.constraintlayout.widget.ConstraintLayout>

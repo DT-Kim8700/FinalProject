@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityApplySecond">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="224dp"
+        android:fontFamily="@font/jua"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/Date"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"
+        android:fontFamily="@font/jua"
+        android:gravity="center"
+        android:text="Date"
+        android:textColor="#7C7878"
+        android:textColorHint="#FFFFFF"
+        android:textSize="25sp" />
+
+
+    <EditText
+        android:id="@+id/Time"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"
+        android:fontFamily="@font/jua"
+        android:gravity="center"
+        android:text="Time"
+        android:textColor="#7C7878"
+        android:textColorHint="#FFFFFF"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_sincheong"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="#D6C8A1"
+            android:fontFamily="@font/jua"
+            android:gravity="center"
+            android:text="신청"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+</LinearLayout>
